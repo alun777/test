@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uber Easts</title>
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/> 
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+           font-family: 'icomoon';
+           src:  url('fonts/icomoon.eot?7kkyc2');
+           src:  url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+           url('fonts/icomoon.ttf?7kkyc2') format('truetype'),
+           url('fonts/icomoon.woff?7kkyc2') format('woff'),
+           url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+           font-weight: normal;
+          font-style: normal;
+        }
+
+        .block {
+            height: 452px;
+            width: 1015px;
+            margin: 30px auto 0;
+            display: flex;
+            flex-direction: row;
+            color: #252525;
+            font-family: Helvetica;
+        }
+
+        .block__left__elem {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block__right__elem {
+            flex: 1;
+        }
+
+        .block__left__elem__p--green {
+            color: #60b707;
+            font-weight: 700;
+        }
+
+        .block__left__elem__p {
+            flex: 3;
+            font-size: 26px;
+        }
+
+        .block__left__elem__search {
+            flex: 1;
+            position: relative;
+        }
+
+        .block__left__elem__search input {
+            width: 452px;
+            height: 38px;
+            line-height: 38px;
+            outline: none;
+            border: 1px solid #E0E0E0;
+            border-radius: 3px;
+            font-size: 14px;
+            padding-left: 35px;
+        }
+
+        .block__left__elem__search button {
+            width: 120px;
+            height: 38px;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color: #3e9920;
+            color: #fff;
+            outline: none;
+        }
+
+        .block__left__elem__p2 {
+            font-size: 44px;
+            flex: 2;
+        }
+
+        .block__right__elem {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .block__right__elem--button button{
+            width: 104px;
+            height: 40px;
+            border:1px solid #e0e0e0;
+            font-size: 14px;
+            line-height: 40px;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        .block__right__elem img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .block__left__elem__search--mod {
+            font-family: "icomoon";
+            position: absolute;
+            top: 11px;
+            left: 6px;
+            color: #848484;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="block">
+        <div class="block__left__elem">
+                <p class="block__left__elem__p">
+                    <span class="block__left__elem__p--mod">Uber</span> <span class="block__left__elem__p--green">Eats</span>
+                </p>
+                <p class="block__left__elem__p2">Discover restaurants that <br>
+                    deliver near you</p>
+                <div class="block__left__elem__search">
+                    <span class="block__left__elem__search--mod"></span>
+                    <input type="text" placeholder="Enter your delivery address">
+                    <button style="cursor:pointer">Find Food</button>
+                </div>
+        </div>
+
+        <div class="block__right__elem">
+            <div class="block__right__elem--button">
+                <button style="cursor:pointer">Sign In</button>
+            </div>
+            <div class="videoontopright">
+            <img src="images/top-right.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
